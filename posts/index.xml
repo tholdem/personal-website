@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Jaden Wang&#39;s Personal Page</title>
+    <link>http://jadenmath.com/posts/</link>
+    <description>Recent content in Posts on Jaden Wang&#39;s Personal Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Dec 2020 22:16:58 -0700</lastBuildDate><atom:link href="http://jadenmath.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Random Variables</title>
+      <link>http://jadenmath.com/posts/random_variables/</link>
+      <pubDate>Fri, 25 Dec 2020 22:16:58 -0700</pubDate>
+      
+      <guid>http://jadenmath.com/posts/random_variables/</guid>
+      <description>A random variable is perhaps the most fundamental concept in probability. However, during the intro course I never thought about the motivation behind this concept and just accepted it blindly. It was only until I took measure-theoretic probability that I realized a lack of intuition of this concept hindered my ability to consolidate abstractness into understanding. Therefore, I&amp;rsquo;m sharing my understanding here with you, and perhaps you will find it helpful.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>http://jadenmath.com/posts/introduction/</link>
+      <pubDate>Thu, 24 Dec 2020 20:22:37 -0700</pubDate>
+      
+      <guid>http://jadenmath.com/posts/introduction/</guid>
+      <description>The goal of this</description>
+    </item>
+    
+  </channel>
+</rss>
