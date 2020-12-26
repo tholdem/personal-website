@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Jaden Wang&#39;s Personal Page</title>
+    <link>http://jadenmath.com/posts/</link>
+    <description>Recent content in Posts on Jaden Wang&#39;s Personal Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Dec 2020 20:22:37 -0700</lastBuildDate><atom:link href="http://jadenmath.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://jadenmath.com/posts/introduction/</link>
+      <pubDate>Thu, 24 Dec 2020 20:22:37 -0700</pubDate>
+      
+      <guid>http://jadenmath.com/posts/introduction/</guid>
+      <description>Hello World</description>
+    </item>
+    
+  </channel>
+</rss>
