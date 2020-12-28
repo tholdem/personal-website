@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The intuition behind σ-algbera | Jaden&#39;s Math Blog</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="$\qquad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\boldsymbol{\sigma}$-algbera (or equivalently $\sigma$-field). Without proper motivation, it can be quite perplexing why we even need this concept in the first place. After all, we managed to do all sorts of cool stuff in an intro course without it! Hopefully by the end of this post, you will not only understand why it&rsquo;s so fundamental for probability but also make sense why we define it the way it is.">
+<meta name="author" content="">
+<link rel="canonical" href="http://jadenmath.com/posts/sigma_algebra/" />
+<link href="http://jadenmath.com/assets/css/stylesheet.min.524a948b8f4508f527dab1adc5008c9bf754d0578f06c86e560511bd3189300e.css" integrity="sha256-UkqUi49FCPUn2rGtxQCMm/dU0FePBshuVgURvTGJMA4=" rel="preload stylesheet"
+    as="style">
+
+<link rel="icon" href="http://jadenmath.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://jadenmath.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://jadenmath.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://jadenmath.com/apple-touch-icon.png">
+<link rel="mask-icon" href="http://jadenmath.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.79.1" />
+
+
+<meta property="og:title" content="The intuition behind σ-algbera" />
+<meta property="og:description" content="$\qquad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\boldsymbol{\sigma}$-algbera (or equivalently $\sigma$-field). Without proper motivation, it can be quite perplexing why we even need this concept in the first place. After all, we managed to do all sorts of cool stuff in an intro course without it! Hopefully by the end of this post, you will not only understand why it&rsquo;s so fundamental for probability but also make sense why we define it the way it is." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://jadenmath.com/posts/sigma_algebra/" />
+<meta property="article:published_time" content="2020-12-27T15:56:01-07:00" />
+<meta property="article:modified_time" content="2020-12-27T15:56:01-07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The intuition behind σ-algbera"/>
+<meta name="twitter:description" content="$\qquad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\boldsymbol{\sigma}$-algbera (or equivalently $\sigma$-field). Without proper motivation, it can be quite perplexing why we even need this concept in the first place. After all, we managed to do all sorts of cool stuff in an intro course without it! Hopefully by the end of this post, you will not only understand why it&rsquo;s so fundamental for probability but also make sense why we define it the way it is."/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The intuition behind σ-algbera",
+  "name": "The intuition behind σ-algbera",
+  "description": "$\\qquad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\\boldsymbol{\\sigma}$-algbera (or equivalently $\\sigma$-field). Without proper …",
+  "keywords": [
+    
+  ],
+  "articleBody": "$\\qquad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\\boldsymbol{\\sigma}$-algbera (or equivalently $\\sigma$-field). Without proper motivation, it can be quite perplexing why we even need this concept in the first place. After all, we managed to do all sorts of cool stuff in an intro course without it! Hopefully by the end of this post, you will not only understand why it’s so fundamental for probability but also make sense why we define it the way it is.\n$\\qquad$Let’s pretend we are some mathematicians living in an alternate universe knowing nothing about $\\sigma$-algebra and we want to study experiments with random outcomes. All we know is that given an experiment with sample space $\\Omega$ and any event $A \\subseteq \\Omega$ from this sample space, we want the probability measure to satisfy the three probability axioms from an intro course:\n$\\qquad$(i) $0\\leq P(A) \\leq 1$.\n$\\qquad$(ii) $P(\\emptyset) = 0, P(\\Omega) = 1$.\n$\\qquad$(iii) If $A_1, A_2, \\ldots$ are disjoint events, then $$ P \\left(\\bigcup_{n=1}^{\\infty} A_n \\right) = \\sum_{n=1}^{\\infty}P(A_n) $$ (countable additivity).\nA countable example $\\qquad$With this knowledge in mind, we want to start with some concrete examples and study them systematically so that we can generalize our results. Sadly the alternate universe is not void of the cliches from this world, so first inevitably we are going to consider an experiment where we toss a coin twice. Since we are mathematicians and not physicists, we are not actually going to perform the experiment. Instead we notice that once we setup the rules of the experiment, although the outcome is still random, all the possible outcomes are deterministically known: they are ${HH},{HT},{TH},{TT}$, and together via set union they form the sample space $\\Omega =\\{ {HH} \\cup {HT}\\cup {TH}\\cup {TT} \\}$. In other words, $\\Omega$ already contains considerable information about the experiment. We can further exploit this information by considering all possible ways to group the outcomes. For example, we can group ${HH},{HT}$ together via set union to represent the event where the first toss lands on a head. Each grouping is an event and is clearly a subset of $\\Omega$. Then all possible events forms a collection of all subsets of $\\Omega$, which looks like $$ \\{\\emptyset,{HH},{HT},{TH},{TT},{HH} \\cup {HT}, \\ldots, {HT} \\cup {TH} \\cup {TT}, \\Omega \\} $$\n$\\qquad$As you may know, this is the power set of $\\Omega$, denoted $2^{\\Omega}$. We can interpret $\\emptyset$ as “impossible events”, such as the event that the coin lands on a torso (what?) in the first toss. Now with this collection of events, we can compute the corresponding probability for each event the intro way and obtain a deterministic map between the events and their probabilities, giving us a probability measure $P$. Therefore, the triple $(\\Omega,2^{\\Omega},P)$ gives us everything we know or care about the experiment prior to executing it. Better yet, we are allowed to leave all the messy randomness to the physicists!\nAn uncountable example $\\qquad$Clearly one example cannot give us sufficient understanding, so let’s consider a harder problem. Consider a 1D dart-throwing experiment, where the landing position of the dart is equally likely to be found at any real number along the interval $[0,1]$ (that is, the position follows a uniform distribution on $[0,1]$ but I don’t want to go into random variable or distribution now.). Clearly, the sample space $\\Omega = [0,1]$. Notice that this interval contains uncountably many elements, as opposed to only 4 elements in the coin toss example. Just like the last example, we still want to find the collection of all possible events by grouping the elements of the sample space. We might naturally suspect that this collection is again the power set of $\\Omega$. But we are a bit cautious, as flashbacks from analysis remind us uncountable sets can get weird very quickly. So the question is: what could go wrong with the power set of an uncountable set?\n$\\qquad$It turns out that there exist some abominations in this power set! They are much more elusive than the typical subsets we can construct directly from elements in $\\Omega$. In fact, it requires us to invoke the notorious Axiom of Choice in order to construct disjoint subsets of $[0,1]$ (called the Vitali sets) for each rational number in $[0,1]$ and together they form an even partition of $[0,1]$. If we assign probability measure to these sets using the common notion of “length” (Lebesgue measure), due to the even partition they must have the same measure $P(H)$. Countable additivity eventually leads to the result that $$ 1=P([0,1]) = \\sum_{q \\in \\mathbb{Q} \\cap [0,1]} P(H), $$ which contradicts the fact that countable sum of the same quantity can only equal 0 or diverge but never to 1. Don’t worry if you didn’t understand the sketch of this contradiction (see Rosenthal 1.2 for details), the important takeaway is that we cannot assign probability measure to these subsets of the power set, or they would break the axioms of probability that we treasure dearly! There are two ways to reconcile this problem; we can either tweak the axioms of probability or Axiom of Choice to make the contradiction disappear somehow, or we can banish these abominations from our analysis. Luckily, this is quite an easy choice: since the abominations require a convoluted construction using Axiom of Choice, they are unintelligible in the real world sense and do not represent any meaningful events. We can safely ignore them without losing any information of the events we care about.\nA bottom-up approach $\\qquad$Phew, crisis averted! However, we soon realize that it is no easy feat to exclude them from the power set. Although the Axiom of Choice sheds light on their existence, it offers no insight on how to describe these abominations explicitly. Without even knowing what they look like, we also wouldn’t know what the complement of their union looks like, nor can we assign probability measure to unknown sets. Hence, it seems that the top-down approach of excluding them from the power set is a dead end. How about if we approach from bottom-up? If we can construct a collection that includes all possible events but not the abominations, then we achieve the same objective. Since it’s easier for us to think of an explicit event than a non-event on $[0,1]$, this approach seems to be much more promising.\n$\\qquad$Next we immediately face two questions. First, how should we define the rules of construction (aka the definition)? Second, what are the “building blocks” in this construction?\n$\\qquad$To make the rules for constructing the collection $\\mathcal{F}$, we need to make sure they are consistent with the axioms of probability, which tell us what types of subsets of $\\Omega$ we care about for probability. Thus, the first rule makes sure we include the events $\\emptyset$ and $\\Omega$ in the collection $\\mathcal{F}$:\n$\\qquad$(i) $\\emptyset \\in \\mathcal{F}$ or $\\Omega \\in \\mathcal{F}$.\n$\\qquad$We only need one of the two as we anticipate that the second rule will immediately give us the other. Since probability measure has the property that $P(A^c) = 1 - P(A)$ for any event $A \\subseteq \\Omega$, we enforce the second rule to ensure the complement of any event is an event and resides in our collection $\\mathcal{F}$:\n$\\qquad$(ii) If $A \\in \\mathcal{F}$, then $A^c \\in \\mathcal{F}$.\n$\\qquad$The last axiom of probability demands countable unions, so let’s make sure $\\mathcal{F}$ is closed under countable unions as well so we can assign probability measure to them. Another nice thing about closure under countable union is that we can rigorously describe infinite coin toss and many more exotic events!\n$\\qquad$(iii) If $A_1, A_2,\\ldots \\in \\mathcal{F}$, then $\\bigcup_{n=1}^{\\infty} A_n \\in \\mathcal{F}$.\n$\\qquad$Note that we do not require $(A_n)$ to be disjoint here, although disjointness can be easily achieved using (ii). These three axioms largely parallel those of probability, and the differences are just a matter of preference, since we can choose a different set of axioms to derive the current axioms and vice versa. Lo and behold, if $\\mathcal{F}$ satisfies these three axioms, then we define $\\mathcal{F}$ to be a $\\boldsymbol{\\sigma}$-algbera! It turns out that the concept of $\\sigma$-algbera arises naturally from the need to find a collection of subsets of $\\Omega$ that encompasses all events but excludes abominations, so we can legally assign probability measure to every set in this collection. Notably, in our previous example of coin toss, or any experiment with countable/finite sample space $\\Omega$, the $\\sigma$-algebra is precisely $2^{\\Omega}$.\n$\\qquad$It remains to find the “building blocks” of $\\mathcal{F}$. It is not hard to see that subsets such as $[a,b], (a,b), (a,b], [a,b)$ where $0\\leq a Let’s recap $\\qquad$When studying a random process, we are interested in knowing the probability of events occurring. Thus, it would be important to know what those possible events are. In an intro course, we simply avoid talking about the nuances of these events. In a more rigorous setting, we see that the power set of sample space $\\Omega$ gives us the information we desire when $\\Omega$ is finite or countably infinite but is proven to be inadequate for uncountable $\\Omega$. For the latter case, we require a new concept $\\sigma$-algebra that allow us to define probability measure on all its elements, including all possible events that we care about. It is therefore essential for building a rigorous probability theory.\n",
+  "wordCount" : "1698",
+  "inLanguage": "en",
+  "datePublished": "2020-12-27T15:56:01-07:00",
+  "dateModified": "2020-12-27T15:56:01-07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://jadenmath.com/posts/sigma_algebra/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jaden's Math Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://jadenmath.com/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        .theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://jadenmath.com/" accesskey="h" title="Jaden&#39;s Math Blog (Alt + H)">Jaden&#39;s Math Blog</a>
+            <span class="logo-switches">
+                <span class="theme-toggle" title="(Alt + T)">
+                    <a id="theme-toggle" accesskey="t">
+                        <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </a>
+                </span>
+                
+            </span>
+        </div>
+        <ul class="menu" id="menu" onscroll="menu_on_scroll()"></ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">
+      The intuition behind σ-algbera
+    </h1>
+    <div class="post-meta">December 27, 2020
+
+    </div>
+  </header> 
+
+  <div class="post-content">
+<p>$\qquad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\boldsymbol{\sigma}$<strong>-algbera</strong> (or equivalently $\sigma$-field). Without proper motivation, it can be quite perplexing why we even need this concept in the first place. After all, we managed to do all sorts of cool stuff in an intro course without it! Hopefully by the end of this post, you will not only understand why it&rsquo;s so fundamental for probability but also make sense why we define it the way it is.</p>
+<p>$\qquad$Let&rsquo;s pretend we are some mathematicians living in an alternate universe knowing nothing about $\sigma$-algebra and we want to study experiments with random outcomes. All we know is that given an experiment with sample space $\Omega$ and any event $A \subseteq \Omega$ from this sample space, we want the probability measure to satisfy the three probability axioms from an intro course:</p>
+<p>$\qquad$(i) $0\leq P(A) \leq 1$.</p>
+<p>$\qquad$(ii) $P(\emptyset) = 0, P(\Omega) = 1$.</p>
+<p>$\qquad$(iii) If $A_1, A_2, \ldots$ are disjoint events, then
+$$
+P \left(\bigcup_{n=1}^{\infty} A_n \right) = \sum_{n=1}^{\infty}P(A_n)
+$$ (countable additivity).</p>
+<h2 id="a-countable-example">A countable example<a hidden class="anchor" aria-hidden="true" href="#a-countable-example">#</a></h2>
+<p>$\qquad$With this knowledge in mind, we want to start with some concrete examples and study them systematically so that we can generalize our results. Sadly the alternate universe is not void of the cliches from this world, so first inevitably we are going to consider an experiment where we toss a coin twice. Since we are mathematicians and not physicists, we are not actually going to perform the experiment. Instead we notice that once we setup the rules of the experiment, although the outcome is still random, all the <em>possible</em> outcomes are deterministically known: they are ${HH},{HT},{TH},{TT}$, and together via set union they form the sample space $\Omega =\{ {HH} \cup {HT}\cup {TH}\cup {TT} \}$. In other words, $\Omega$ already contains considerable information about the experiment. We can further exploit this information by considering all possible ways to group the outcomes. For example, we can group ${HH},{HT}$ together via set union to represent the event where the first toss lands on a head. Each grouping is an event and is clearly a subset of $\Omega$. Then all possible events forms a collection of all subsets of $\Omega$, which looks like
+$$
+\{\emptyset,{HH},{HT},{TH},{TT},{HH} \cup {HT}, \ldots, {HT} \cup {TH} \cup {TT}, \Omega \}
+$$</p>
+<p>$\qquad$As you may know, this is the power set of $\Omega$, denoted $2^{\Omega}$. We can interpret $\emptyset$ as &ldquo;impossible events&rdquo;, such as the event that the coin lands on a torso (what?) in the first toss. Now with this collection of events, we can compute the corresponding probability for each event the intro way and obtain a deterministic map between the events and their probabilities, giving us a probability measure $P$. Therefore, the triple $(\Omega,2^{\Omega},P)$ gives us everything we know or care about the experiment prior to executing it. Better yet, we are allowed to leave all the messy randomness to the physicists!</p>
+<h2 id="an-uncountable-example">An uncountable example<a hidden class="anchor" aria-hidden="true" href="#an-uncountable-example">#</a></h2>
+<p>$\qquad$Clearly one example cannot give us sufficient understanding, so let&rsquo;s consider a harder problem. Consider a 1D dart-throwing experiment, where the landing position of the dart is equally likely to be found at any real number along the interval $[0,1]$ (that is, the position follows a uniform distribution on $[0,1]$ but I don&rsquo;t want to go into random variable or distribution now.). Clearly, the sample space $\Omega = [0,1]$. Notice that this interval contains uncountably many elements, as opposed to only 4 elements in the coin toss example. Just like the last example, we still want to find the collection of all possible events by grouping the elements of the sample space. We might naturally suspect that this collection is again the power set of $\Omega$. But we are a bit cautious, as flashbacks from analysis remind us uncountable sets can get weird very quickly. So the question is: what could go wrong with the power set of an uncountable set?</p>
+<p>$\qquad$It turns out that there exist some abominations in this power set! They are much more elusive than the typical subsets we can construct directly from elements in $\Omega$. In fact, it requires us to invoke the notorious <em>Axiom of Choice</em> in order to construct disjoint subsets of $[0,1]$ (called the Vitali sets) for each rational number in $[0,1]$ and together they form an even partition of $[0,1]$. If we assign probability measure to these sets using the common notion of &ldquo;length&rdquo; (Lebesgue measure), due to the even partition they must have the same measure $P(H)$. Countable additivity eventually leads to the result that
+$$
+1=P([0,1]) = \sum_{q \in \mathbb{Q} \cap [0,1]} P(H),
+$$
+which contradicts the fact that countable sum of the same quantity can only equal 0 or diverge but never to 1. Don&rsquo;t worry if you didn&rsquo;t understand the sketch of this contradiction (see Rosenthal 1.2 for details), the important takeaway is that we cannot assign probability measure to these subsets of the power set, or they would break the axioms of probability that we treasure dearly! There are two ways to reconcile this problem; we can either tweak the axioms of probability or Axiom of Choice to make the contradiction disappear somehow, or we can banish these abominations from our analysis. Luckily, this is quite an easy choice: since the abominations require a convoluted construction using Axiom of Choice, they are unintelligible in the real world sense and do not represent any meaningful events. We can safely ignore them without losing any information of the events we care about.</p>
+<h2 id="a-bottom-up-approach">A bottom-up approach<a hidden class="anchor" aria-hidden="true" href="#a-bottom-up-approach">#</a></h2>
+<p>$\qquad$Phew, crisis averted! However, we soon realize that it is no easy feat to exclude them from the power set. Although the Axiom of Choice sheds light on their existence, it offers no insight on how to describe these abominations explicitly. Without even knowing what they look like, we also wouldn&rsquo;t know what the complement of their union looks like, nor can we assign probability measure to unknown sets. Hence, it seems that the top-down approach of excluding them from the power set is a dead end. How about if we approach from bottom-up? If we can construct a collection that includes all possible events but not the abominations, then we achieve the same objective. Since it&rsquo;s easier for us to think of an explicit event than a non-event on $[0,1]$, this approach seems to be much more promising.</p>
+<p>$\qquad$Next we immediately face two questions. First, how should we define the rules of construction (aka the definition)? Second, what are the &ldquo;building blocks&rdquo; in this construction?</p>
+<p>$\qquad$To make the rules for constructing the collection $\mathcal{F}$, we need to make sure they are consistent with the axioms of probability, which tell us what types of subsets of $\Omega$ we care about for probability. Thus, the first rule makes sure we include the events $\emptyset$ and $\Omega$ in the collection $\mathcal{F}$:</p>
+<p>$\qquad$(i) $\emptyset \in \mathcal{F}$ or $\Omega \in \mathcal{F}$.</p>
+<p>$\qquad$We only need one of the two as we anticipate that the second rule will immediately give us the other. Since probability measure has the property that $P(A^c) = 1 - P(A)$ for any event $A \subseteq \Omega$, we enforce the second rule to ensure the complement of any event is an event and resides in our collection $\mathcal{F}$:</p>
+<p>$\qquad$(ii) If $A \in \mathcal{F}$, then $A^c \in \mathcal{F}$.</p>
+<p>$\qquad$The last axiom of probability demands countable unions, so let&rsquo;s make sure $\mathcal{F}$ is closed under countable unions as well so we can assign probability measure to them. Another nice thing about closure under countable union is that we can rigorously describe infinite coin toss and many more exotic events!</p>
+<p>$\qquad$(iii) If $A_1, A_2,\ldots \in \mathcal{F}$, then $\bigcup_{n=1}^{\infty} A_n \in \mathcal{F}$.</p>
+<p>$\qquad$Note that we do not require $(A_n)$ to be disjoint here, although disjointness can be easily achieved using (ii). These three axioms largely parallel those of probability, and the differences are just a matter of preference, since we can choose a different set of axioms to derive the current axioms and vice versa. Lo and behold, if $\mathcal{F}$ satisfies these three axioms, then we define $\mathcal{F}$ to be a $\boldsymbol{\sigma}$<strong>-algbera</strong>! It turns out that the concept of $\sigma$-algbera arises naturally from the need to find a collection of subsets of $\Omega$ that encompasses all events but excludes abominations, so we can legally assign probability measure to every set in this collection. Notably, in our previous example of coin toss, or any experiment with countable/finite sample space $\Omega$, the $\sigma$-algebra is precisely $2^{\Omega}$.</p>
+<p>$\qquad$It remains to find the &ldquo;building blocks&rdquo; of $\mathcal{F}$. It is not hard to see that subsets such as $[a,b], (a,b), (a,b], [a,b)$ where $0\leq a &lt; b \leq 1$ are all simple interval forms representing the events of the dart landing inside the interval. Moreover, each interval form can give rise to all other interval forms (including singletons $\{a\}$) via set operations. Intuitively, we might think that perhaps any set in $\mathcal{F}$ can be constructed from these interval forms. This is unfortunately not the case. Indeed, we can find a counterexample that shatters our hope to construct all elements of the $\sigma$-algebra $\mathcal{F}$ explicitly. How can we assign probability measure via length to them if we don&rsquo;t know what they are! Imagine how frustrated we would feel if we didn&rsquo;t know any better, as the bottom-up approach seems to meet a dead end as well. Luckily, the Extension Theorem will magically help us achieve exactly what we want without the need to explicitly describe all elements of $\mathcal{F}$. But that&rsquo;s a whole new topic for another day!</p>
+<h2 id="lets-recap">Let&rsquo;s recap<a hidden class="anchor" aria-hidden="true" href="#lets-recap">#</a></h2>
+<p>$\qquad$When studying a random process, we are interested in knowing the probability of events occurring. Thus, it would be important to know what those possible events are. In an intro course, we simply avoid talking about the nuances of these events. In a more rigorous setting, we see that the power set of sample space $\Omega$ gives us the information we desire when $\Omega$ is finite or countably infinite but is proven to be inadequate for uncountable $\Omega$. For the latter case, we require a new concept $\sigma$-algebra that allow us to define probability measure on all its elements, including all possible events that we care about. It is therefore essential for building a rigorous probability theory.</p>
+
+</div>
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main><footer class="footer">
+    <span>&copy; 2020 <a href="http://jadenmath.com/">Jaden&#39;s Math Blog</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
+    <span>&middot;</span>
+    <span>Theme <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+	<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</footer>
+<a href="#top">
+    <button class="top-link" id="top-link" type="button" aria-label="go to top" title="Go to Top (Alt + G)"
+        accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+
+
+<script defer src="http://jadenmath.com/assets/js/highlight.min.27cd435cc9ed6abb4b496581b151804f79f366c412620272bb94e2f5f598ebcc.js" integrity="sha256-J81DXMntartLSWWBsVGAT3nzZsQSYgJyu5Ti9fWY68w="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                behavior: "smooth"
+            });
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.replaceState(null, null, `#${id}`);
+            }
+        });
+    });
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+</body>
+
+</html>

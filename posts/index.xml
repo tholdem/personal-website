@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Jaden Wang&#39;s Personal Page</title>
+    <title>Posts on Jaden&#39;s Math Blog</title>
     <link>http://jadenmath.com/posts/</link>
-    <description>Recent content in Posts on Jaden Wang&#39;s Personal Page</description>
+    <description>Recent content in Posts on Jaden&#39;s Math Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Dec 2020 22:16:58 -0700</lastBuildDate><atom:link href="http://jadenmath.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Dec 2020 15:56:01 -0700</lastBuildDate><atom:link href="http://jadenmath.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The intuition behind σ-algbera</title>
+      <link>http://jadenmath.com/posts/sigma_algebra/</link>
+      <pubDate>Sun, 27 Dec 2020 15:56:01 -0700</pubDate>
+      
+      <guid>http://jadenmath.com/posts/sigma_algebra/</guid>
+      <description>$\qquad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\boldsymbol{\sigma}$-algbera (or equivalently $\sigma$-field). Without proper motivation, it can be quite perplexing why we even need this concept in the first place. After all, we managed to do all sorts of cool stuff in an intro course without it! Hopefully by the end of this post, you will not only understand why it&amp;rsquo;s so fundamental for probability but also make sense why we define it the way it is.</description>
+    </item>
+    
     <item>
       <title>Random Variables</title>
       <link>http://jadenmath.com/posts/random_variables/</link>
@@ -17,12 +26,12 @@
     </item>
     
     <item>
-      <title>Introduction</title>
+      <title>About this blog</title>
       <link>http://jadenmath.com/posts/introduction/</link>
       <pubDate>Thu, 24 Dec 2020 20:22:37 -0700</pubDate>
       
       <guid>http://jadenmath.com/posts/introduction/</guid>
-      <description>The goal of this</description>
+      <description>$\qquad$Welcome to Jaden&amp;rsquo;s math blog! I&amp;rsquo;ve been obsessed with probability ever since I took the intro course using Blizstein and Hwuang&amp;rsquo;s Introduction to Probability. The book was filled with motivation and intuition, and I&amp;rsquo;ve had so much fun doing challenging problems and gaining deep understanding of the content. Therefore, I needed no convincing to jump to a measure-theoretic probability (MTP) course next using Billingsley&amp;rsquo;s Probability and Measure. However, my first impression of MTP is that it&amp;rsquo;s a huge leap from the intro course in terms of abstractness.</description>
     </item>
     
   </channel>
