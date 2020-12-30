@@ -13,7 +13,7 @@
       <pubDate>Sun, 27 Dec 2020 15:56:01 -0700</pubDate>
       
       <guid>https://www.jadenmath.com/posts/sigma_algebra/</guid>
-      <description>$\qquad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\boldsymbol{\sigma}$-algbera (or equivalently $\sigma$-field). Without proper motivation, it can be quite perplexing why we even need this concept in the first place. After all, we managed to do all sorts of cool stuff in an intro course without it! Hopefully by the end of this post, you will not only understand why it&amp;rsquo;s so fundamental for probability but also make sense why we define it the way it is.</description>
+      <description>$\quad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\boldsymbol{\sigma}$-algbera (or equivalently $\sigma$-field). Without proper motivation, it can be quite perplexing why we even need this concept in the first place. After all, we managed to do all sorts of cool stuff in an intro course without it! Hopefully by the end of this post, you will not only understand why it&amp;rsquo;s so central to study probability but also make sense why we define it the way it is.</description>
     </item>
     
     <item>
@@ -26,12 +26,21 @@
     </item>
     
     <item>
-      <title>About this blog</title>
-      <link>https://www.jadenmath.com/about/</link>
-      <pubDate>Thu, 24 Dec 2020 20:51:22 -0700</pubDate>
+      <title>Archive</title>
+      <link>https://www.jadenmath.com/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.jadenmath.com/about/</guid>
-      <description>$\qquad$Welcome to Jaden&amp;rsquo;s math blog! I&amp;rsquo;ve been obsessed with probability ever since I took the intro course using Blizstein and Hwuang&amp;rsquo;s Introduction to Probability. The book was filled with motivation and intuition, and I&amp;rsquo;ve had so much fun doing challenging problems and gaining deep understanding of the content. Therefore, I needed no convincing to jump to a measure-theoretic probability (MTP) course next using Billingsley&amp;rsquo;s Probability and Measure. However, my first impression of MTP is that it&amp;rsquo;s a huge leap from the intro course in terms of abstractness.</description>
+      <guid>https://www.jadenmath.com/archive/</guid>
+      <description>archive</description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>https://www.jadenmath.com/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.jadenmath.com/resources/</guid>
+      <description>resources</description>
     </item>
     
   </channel>

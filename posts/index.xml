@@ -13,7 +13,7 @@
       <pubDate>Sun, 27 Dec 2020 15:56:01 -0700</pubDate>
       
       <guid>https://www.jadenmath.com/posts/sigma_algebra/</guid>
-      <description>$\qquad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\boldsymbol{\sigma}$-algbera (or equivalently $\sigma$-field). Without proper motivation, it can be quite perplexing why we even need this concept in the first place. After all, we managed to do all sorts of cool stuff in an intro course without it! Hopefully by the end of this post, you will not only understand why it&amp;rsquo;s so fundamental for probability but also make sense why we define it the way it is.</description>
+      <description>$\quad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\boldsymbol{\sigma}$-algbera (or equivalently $\sigma$-field). Without proper motivation, it can be quite perplexing why we even need this concept in the first place. After all, we managed to do all sorts of cool stuff in an intro course without it! Hopefully by the end of this post, you will not only understand why it&amp;rsquo;s so central to study probability but also make sense why we define it the way it is.</description>
     </item>
     
     <item>
