@@ -25,5 +25,14 @@
       <description>A random variable is perhaps the most fundamental concept in probability. However, during the intro course I never thought about the motivation behind this concept and just accepted it blindly. It was only until I took measure-theoretic probability that I realized a lack of intuition of this concept hindered my ability to consolidate abstractness into understanding. Therefore, I&amp;rsquo;m sharing my understanding here with you, and perhaps you will find it helpful.</description>
     </item>
     
+    <item>
+      <title>Why bother with extension theorem?</title>
+      <link>https://www.jadenmath.com/posts/extension_theorem/</link>
+      <pubDate>Fri, 25 Dec 2020 22:16:58 -0700</pubDate>
+      
+      <guid>https://www.jadenmath.com/posts/extension_theorem/</guid>
+      <description>Recall that in the post about $\sigma$-algebra</description>
+    </item>
+    
   </channel>
 </rss>
