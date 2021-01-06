@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Jaden&#39;s Math Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Dec 2020 15:56:01 -0700</lastBuildDate><atom:link href="https://www.jadenmath.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jan 2021 22:16:58 -0700</lastBuildDate><atom:link href="https://www.jadenmath.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why bother with extension theorem?</title>
+      <link>https://www.jadenmath.com/posts/extension_theorem/</link>
+      <pubDate>Sat, 02 Jan 2021 22:16:58 -0700</pubDate>
+      
+      <guid>https://www.jadenmath.com/posts/extension_theorem/</guid>
+      <description>$\quad$Recall that at the end of the $\sigma$-algebra post, I briefly mentioned that we cannot just construct all elements of $\sigma$-algebra $\mathcal{F}$ on $\Omega$ using intervals and set operations. Since the proof of this claim is rather involved and doesn&amp;rsquo;t aid our intuition, I shall simply refer you to the last subsection in Chapter 1.2 of Billingsley for details. The takeaway is that our inability to construct all elements of $\mathcal{F}$ using intervals poses a serious challenge to measuring them.</description>
+    </item>
+    
     <item>
       <title>The intuition behind σ-algbera</title>
       <link>https://www.jadenmath.com/posts/sigma_algebra/</link>
@@ -19,19 +28,10 @@
     <item>
       <title>Random Variables</title>
       <link>https://www.jadenmath.com/posts/random_variables/</link>
-      <pubDate>Fri, 25 Dec 2020 22:16:58 -0700</pubDate>
+      <pubDate>Sun, 05 Jan 2020 22:16:58 -0700</pubDate>
       
       <guid>https://www.jadenmath.com/posts/random_variables/</guid>
       <description>A random variable is perhaps the most fundamental concept in probability. However, during the intro course I never thought about the motivation behind this concept and just accepted it blindly. It was only until I took measure-theoretic probability that I realized a lack of intuition of this concept hindered my ability to consolidate abstractness into understanding. Therefore, I&amp;rsquo;m sharing my understanding here with you, and perhaps you will find it helpful.</description>
-    </item>
-    
-    <item>
-      <title>Why bother with extension theorem?</title>
-      <link>https://www.jadenmath.com/posts/extension_theorem/</link>
-      <pubDate>Fri, 25 Dec 2020 22:16:58 -0700</pubDate>
-      
-      <guid>https://www.jadenmath.com/posts/extension_theorem/</guid>
-      <description>Recall that in the post about $\sigma$-algebra</description>
     </item>
     
   </channel>
