@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Jaden&#39;s Math Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Jan 2021 22:16:58 -0700</lastBuildDate><atom:link href="https://www.jadenmath.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Jan 2021 22:16:58 -0700</lastBuildDate><atom:link href="https://www.jadenmath.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Random Variables</title>
+      <link>https://www.jadenmath.com/posts/random_variables/</link>
+      <pubDate>Tue, 05 Jan 2021 22:16:58 -0700</pubDate>
+      
+      <guid>https://www.jadenmath.com/posts/random_variables/</guid>
+      <description>$\quad$A random variable is perhaps the most fundamental concept in probability. However, during the intro course I never thought about the motivation behind this concept and just hastily accepted it. In measure-theoretic probability, the changes in the definition took me by surprise and for a while I could not intuitively understand what it represents. Hopefully this post will make the concept more accessible and intuitive for you.
+The necessity of random variables $\quad$First, despite the misleading name, a random variable is not a variable.</description>
+    </item>
+    
     <item>
       <title>Why bother with extension theorem?</title>
       <link>https://www.jadenmath.com/posts/extension_theorem/</link>
@@ -23,15 +33,6 @@
       
       <guid>https://www.jadenmath.com/posts/sigma_algebra/</guid>
       <description>$\quad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\boldsymbol{\sigma}$-algbera (or equivalently $\sigma$-field). Without proper motivation, it can be quite perplexing why we even need this concept in the first place. After all, we managed to do all sorts of cool stuff in an intro course without it! Hopefully by the end of this post, you will not only understand why it&amp;rsquo;s so central to study probability but also make sense why we define it the way it is.</description>
-    </item>
-    
-    <item>
-      <title>Random Variables</title>
-      <link>https://www.jadenmath.com/posts/random_variables/</link>
-      <pubDate>Sun, 05 Jan 2020 22:16:58 -0700</pubDate>
-      
-      <guid>https://www.jadenmath.com/posts/random_variables/</guid>
-      <description>A random variable is perhaps the most fundamental concept in probability. However, during the intro course I never thought about the motivation behind this concept and just accepted it blindly. It was only until I took measure-theoretic probability that I realized a lack of intuition of this concept hindered my ability to consolidate abstractness into understanding. Therefore, I&amp;rsquo;m sharing my understanding here with you, and perhaps you will find it helpful.</description>
     </item>
     
   </channel>
