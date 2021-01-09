@@ -23,7 +23,7 @@ The necessity of random variables $\quad$First, despite the misleading name, a r
       <pubDate>Sat, 02 Jan 2021 22:16:58 -0700</pubDate>
       
       <guid>https://www.jadenmath.com/posts/extension_theorem/</guid>
-      <description>$\quad$Recall that at the end of the $\sigma$-algebra post, I briefly mentioned that we cannot just construct all elements of $\sigma$-algebra $\mathcal{F}$ on $\Omega$ using intervals and set operations. Since the proof of this claim is rather involved and doesn&amp;rsquo;t aid our intuition, I shall simply refer you to the last subsection in Chapter 1.2 of Billingsley for details. The takeaway is that our inability to construct all elements of $\mathcal{F}$ using intervals poses a serious challenge to measuring them.</description>
+      <description>$\quad$Recall that at the end of the $\sigma$-algebra post, I briefly mentioned that we cannot just construct all elements of a $\sigma$-algebra $\mathcal{F}$ on $\Omega$ using intervals and set operations. Since the proof of this claim is rather involved and doesn&amp;rsquo;t aid our intuition, I shall simply refer you to the last subsection in Chapter 1.2 of Billingsley for details. The takeaway is that our inability to construct all elements of $\mathcal{F}$ using intervals poses a serious challenge to measuring them.</description>
     </item>
     
     <item>
