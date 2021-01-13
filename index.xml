@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Jan 2021 22:16:58 -0700</lastBuildDate><atom:link href="https://www.jadenmath.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Random Variables</title>
+      <title>Random variables</title>
       <link>https://www.jadenmath.com/posts/random_variables/</link>
       <pubDate>Tue, 05 Jan 2021 22:16:58 -0700</pubDate>
       
       <guid>https://www.jadenmath.com/posts/random_variables/</guid>
-      <description>$\quad$A random variable is perhaps the most fundamental concept in probability. However, during the intro course I never thought about the motivation behind this concept and just hastily accepted it. In measure-theoretic probability, the changes in the definition took me by surprise and for a while I could not intuitively understand what it represents. Hopefully this post will make the concept more accessible and intuitive for you.
+      <description>$\quad$A random variable (r.v.) is perhaps the most fundamental concept in probability. However, during the intro course I never thought about the motivation behind this concept and just hastily accepted it. In measure-theoretic probability, the changes in the definition took me by surprise and for a while I could not intuitively understand what it represents. Hopefully this post will make the concept more accessible and intuitive for you.
 The necessity of random variables $\quad$First, despite the misleading name, a random variable is not a variable.</description>
     </item>
     
