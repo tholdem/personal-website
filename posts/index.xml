@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jaden&#39;s Math Blog</title>
-    <link>https://www.jadenmath.com/posts/</link>
+    <link>https://www.tholdem.github.io/posts/</link>
     <description>Recent content in Posts on Jaden&#39;s Math Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Jan 2021 22:16:58 -0700</lastBuildDate><atom:link href="https://www.jadenmath.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Jan 2021 22:16:58 -0700</lastBuildDate><atom:link href="https://www.tholdem.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Random variables</title>
-      <link>https://www.jadenmath.com/posts/random_variables/</link>
+      <link>https://www.tholdem.github.io/posts/random_variables/</link>
       <pubDate>Tue, 05 Jan 2021 22:16:58 -0700</pubDate>
       
-      <guid>https://www.jadenmath.com/posts/random_variables/</guid>
+      <guid>https://www.tholdem.github.io/posts/random_variables/</guid>
       <description>$\quad$A random variable (r.v.) is perhaps the most fundamental concept in probability. However, during the intro course I never thought about the motivation behind this concept and just hastily accepted it. In measure-theoretic probability, the changes in the definition took me by surprise and for a while I could not intuitively understand what it represents. Hopefully this post will make the concept more accessible and intuitive for you.
 The necessity of random variables $\quad$First, despite the misleading name, a random variable is not a variable.</description>
     </item>
     
     <item>
       <title>Why bother with extension theorem?</title>
-      <link>https://www.jadenmath.com/posts/extension_theorem/</link>
+      <link>https://www.tholdem.github.io/posts/extension_theorem/</link>
       <pubDate>Sat, 02 Jan 2021 22:16:58 -0700</pubDate>
       
-      <guid>https://www.jadenmath.com/posts/extension_theorem/</guid>
+      <guid>https://www.tholdem.github.io/posts/extension_theorem/</guid>
       <description>$\quad$Recall that at the end of the $\sigma$-algebra post, I briefly mentioned that we cannot just construct all elements of a $\sigma$-algebra $\mathcal{F}$ on $\Omega$ using intervals and set operations. Since the proof of this claim is rather involved and doesn&amp;rsquo;t aid our intuition, I shall simply refer you to the last subsection in Chapter 1.2 of Billingsley for details. The takeaway is that our inability to construct all elements of $\mathcal{F}$ using intervals poses a serious challenge to measuring them.</description>
     </item>
     
     <item>
       <title>The intuition behind σ-algbera</title>
-      <link>https://www.jadenmath.com/posts/sigma_algebra/</link>
+      <link>https://www.tholdem.github.io/posts/sigma_algebra/</link>
       <pubDate>Sun, 27 Dec 2020 15:56:01 -0700</pubDate>
       
-      <guid>https://www.jadenmath.com/posts/sigma_algebra/</guid>
+      <guid>https://www.tholdem.github.io/posts/sigma_algebra/</guid>
       <description>$\quad$Typically one of the first concepts introduced in a measure-theoretic probability course is $\boldsymbol{\sigma}$-algbera (or equivalently $\sigma$-field). Without proper motivation, it can be quite perplexing why we even need this concept in the first place. After all, we managed to do all sorts of cool stuff in an intro course without it! Hopefully by the end of this post, you will not only understand why it&amp;rsquo;s so central to study probability but also make sense why we define it the way it is.</description>
     </item>
     
